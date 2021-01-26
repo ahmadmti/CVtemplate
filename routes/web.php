@@ -19,11 +19,11 @@ Route::get('/', function () {
 });
 
 // HomePage
-Route::view('templateOne', 'templateOne');
-Route::view('templateTwo', 'templateTwo');
-Route::view('templateThree', 'templateThree');
-Route::view('templateFour', 'templateFour');
-Route::view('templateFive', 'templateFive');
+Route::view('templateOne', 'template1');
+Route::view('templateTwo', 'template2');
+Route::view('templateThree', 'template3');
+Route::view('templateFour', 'template4');
+Route::view('templateFive', 'template5');
 
 Route::get('Template1',[pdfGenerator::class,'downloadTemplate1']);
 Route::get('Template2',[pdfGenerator::class,'downloadTemplate2']);
