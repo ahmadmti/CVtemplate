@@ -20,7 +20,7 @@ class PdfController extends Controller
             $message->to($to_email, $user->name)
                 ->subject("CV");
             $message->from(config('mail.from.address'), 'CV Template');
-            $message->attach(public_path("storage/$pdf_name"), [
+            $message->attach(storage_path('/' . "$pdf_name"), [
                 'as' => $pdf_name,
                 'mime' => 'application/pdf',
             ]);
